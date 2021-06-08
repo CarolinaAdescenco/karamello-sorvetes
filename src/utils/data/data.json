@@ -1,0 +1,31 @@
+{
+    "contact": [
+        {
+            "name": "WhatsApp",
+            "path": "https://wa.me/5511995187175?text=Ol%C3%A1%2C%20gostaria%20de%20ter%20mais%20informa%C3%A7%C3%B5es%20sobre%20sorvetes%20e%20a%C3%A7a%C3%ADs!",
+            "additional": "+5511995187175"
+        },
+        {
+            "name": "Ifood",
+            "path": "https://www.ifood.com.br/delivery/suzano-sp/karamello-sorvetes-chacaras-ceres/1549ea2a-65b5-4c08-9899-7f0926f48acd",
+            "additional": "Ifood - Karamello Sorvetes"
+        }
+    ],
+    "social": [
+        {
+            "name": "instagram",
+            "path": "https://www.instagram.com/karamellosorvetes/",
+            "icon": "FiInstagram"
+        },
+        {
+            "name": "facebook",
+            "path": "https://facebook.com/karamello.sorv.7",
+            "icon": "FiFacebook"
+        },
+        {
+            "name": "facebook-page",
+            "path": "https://www.facebook.com/karamellosorvetes",
+            "icon": "FiFlag"
+        }
+    ]
+}
