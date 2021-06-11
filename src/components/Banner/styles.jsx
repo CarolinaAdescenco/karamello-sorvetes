@@ -16,7 +16,7 @@ export const Info = styled.div`
 
     @media ${device.lg}{
         width: 100%;
-        max-width: 600px;
+        max-width: 700px;
         margin: 0 auto 0 0;
     }
 `;

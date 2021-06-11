@@ -10,8 +10,16 @@ import Action from '../Action';
 import { contact } from '../../utils/data/data.json';
 
 const data = {
-  title: 'Açaí é vida',
+  title: 'Hmmm, vai um açaí?',
   imagem: Image,
+  subtitle: 'Compre nossos produtos no atacado e revenda na sua casa',
+  description: (
+    <p>
+      Com foco na venda de açaí, sorvete e picolé no atacado,
+      temos condições especiais de pagamento, consultoria exclusiva em como
+      montar sua sorveteria e aumentar suas vendas.
+    </p>
+  ),
 };
 
 const Banner = () => {
@@ -27,14 +35,11 @@ const Banner = () => {
               {data.title}
             </Title>
 
-            <Subtitle>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</Subtitle>
+            <Subtitle>{data.subtitle}</Subtitle>
 
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-              exercitationem, ipsam et nisi laudantium inventore dolore est consectetur
-              vitae assumenda expedita! Eos molestias expedita, non mollitia dolor quaerat
-              maiores nihil?
-            </p>
+            {
+                data.description
+            }
 
             <ContainerAction>
               <Action

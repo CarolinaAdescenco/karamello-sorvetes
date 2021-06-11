@@ -4,6 +4,9 @@ module.exports = {
     description: 'Karamello Sorvetes - Loja de fábrica, atacado e varejo do melhor sorvete, picolé e açaí da região de Suzano e Alto Tietê. Compre no açaí, sorvete e picolé no atacado para revenda',
     url: 'http://karamellosorvetes.com.br',
   },
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   plugins: [
     'gatsby-plugin-gatsby-cloud',
     'gatsby-plugin-image',

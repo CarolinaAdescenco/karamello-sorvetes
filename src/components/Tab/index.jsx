@@ -9,32 +9,7 @@ import {
 
 import { contact } from '../../utils/data/data.json';
 
-const data = [
-  {
-    title: 'Teste 1',
-    description: (
-      <>
-        <h3>Description</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Quisquam nisi ab repellendus adipisci et saepe. Quaerat
-          repudiandae nobis fugiat laboriosam! Beatae molestias blanditiis
-          nam quidem dolores quam, saepe ex similique.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: 'Teste 2',
-    description: 'Description 2',
-  },
-  {
-    title: 'Teste 3',
-    description: 'Description 3',
-  },
-];
-
-const Tab = () => {
+const Tab = ({ data }) => {
   const whatsapp = contact[0];
   const ifood = contact[1];
 
@@ -55,7 +30,7 @@ const Tab = () => {
       <Pannel>
         <Ul>
           {
-            data.map((item, i) => (
+            data && data.map((item, i) => (
               <Li
                 key={item.title}
                 selected={selected === i}
@@ -68,7 +43,7 @@ const Tab = () => {
         </Ul>
 
         {
-            load
+            data && load
               ? (
                 <Loader>
                   <LoadSnake color={colors.primary} />
@@ -76,7 +51,7 @@ const Tab = () => {
               )
               : (
                 <Content>
-                  {data[selected].description}
+                  {data && data[selected].description}
 
                   <ContainerAction>
                     <Action
