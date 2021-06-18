@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Karamello Sorvetes',
-    description: 'Karamello Sorvetes - Loja de fábrica, atacado e varejo do melhor sorvete, picolé e açaí da região de Suzano e Alto Tietê. Compre no açaí, sorvete e picolé no atacado para revenda',
-    url: 'http://karamellosorvetes.com.br',
+    description: 'Karamello Sorvetes - Loja de fábrica teste 2, atacado e varejo do melhor sorvete, picolé e açaí da região de Suzano e Alto Tietê. Compre no açaí, sorvete e picolé no atacado para revenda',
+    url: 'https://karamellosorvetes.com.br',
   },
   flags: {
     PRESERVE_WEBPACK_CACHE: true,
@@ -21,6 +21,13 @@ module.exports = {
         path: './src/images/',
       },
       __key: 'images',
+    },
+    {
+      resolve: 'gatsby-plugin-hotjar',
+      options: {
+        id: 2461471,
+        sv: 6,
+      },
     },
   ],
 };

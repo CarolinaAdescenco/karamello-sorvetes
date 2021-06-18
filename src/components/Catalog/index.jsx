@@ -1,7 +1,7 @@
 import React from 'react';
 import { Section, Container, H2 } from '../../utils/styles/styles';
 import { Img, Content, Pannel } from './styles';
-import Image from '../../images/picole-karamello-sorvetes.png';
+import Image from '../../images/caixa-acai-karamello-sorvetes.jpeg';
 import Tab from '../Tab';
 
 const data = {
@@ -95,7 +95,11 @@ const Catalog = () => (
 
           {data.description}
         </Content>
-        <Img src={Image} />
+        <Img
+          src={Image}
+          alt="Karamello Sorvetes - Açaí, sorvete e picolés no atacado"
+          title="Karamello Sorvetes - Açaí, sorvete e picolés no atacado"
+        />
       </Pannel>
     </Container>
     <Tab data={data.products} />

@@ -35,8 +35,6 @@ const About = () => (
           exclusiva para sorveterias em Suzano, Mogi das Cruzes, Itaquaquecetuba.
         </p>
 
-        <p>Confira os depoimentos de nossos clientes</p>
-
       </Pannel>
     </Container>
   </Section>

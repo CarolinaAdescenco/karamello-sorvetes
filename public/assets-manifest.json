@@ -2,7 +2,9 @@
   "main.js": "render-page.js",
   "render-page.js.map": "render-page.js.map",
   "static/banner-acai-karamello-sorvetes.png": "static/banner-acai-karamello-sorvetes-ffe8b56fe8e71ec233a9b145c3a5e870.png",
+  "static/caixa-acai-karamello-sorvetes.jpeg": "static/caixa-acai-karamello-sorvetes-eb18ae808eaa4e05249d3dac378a3d99.jpeg",
   "static/karamello-sorvetes-banner.jpeg": "static/karamello-sorvetes-banner-d2fe8a1481e08cf17d3c428e5ba5c6f1.jpeg",
+  "static/logo-karamello-sorvetes.jpeg": "static/logo-karamello-sorvetes-7ccf01668437bc2fe4a11275111918a4.jpeg",
   "static/logo-karamello.png": "static/logo-karamello-0d68cc5a59bc8cca2420e84b8f213f9b.png",
   "static/picole-karamello-sorvetes.png": "static/picole-karamello-sorvetes-65d76e805a9261298344b53f7c907fe9.png"
 }

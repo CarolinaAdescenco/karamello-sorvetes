@@ -1,5 +1,7 @@
 import React from 'react';
+import { SiIfood, SiWhatsapp } from 'react-icons/si';
 import { Container } from '../../utils/styles/styles';
+import data from '../../utils/data/data.json';
 
 import {
   Hamburguer, HeaderContainer, Logo, Nav, NavItem,
@@ -15,9 +17,15 @@ const Header = () => {
         <Logo src={LogoKaramello} />
 
         <Nav show={menuOpen}>
-          <NavItem show={menuOpen} href="/">Home</NavItem>
-          <NavItem show={menuOpen} href="/">Page 2</NavItem>
-          <NavItem show={menuOpen} href="/">Page 3</NavItem>
+
+          <NavItem show={menuOpen} target="_blank" href={data.contact[0].path}>
+            <SiWhatsapp />
+            Entrar em contato
+          </NavItem>
+          <NavItem show={menuOpen} target="_blank" href={data.contact[1].path}>
+            <SiIfood />
+            Comprar agora
+          </NavItem>
         </Nav>
 
         <Hamburguer className={`${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>

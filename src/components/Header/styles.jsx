@@ -47,9 +47,19 @@ export const Nav = styled.nav`
 export const NavItem = styled.a`
     margin: 10px auto;
     color: ${(props) => (props.show ? colors.gray1 : colors.primary)};
+    display: flex;
+    align-items: center;
+
+    &:hover{
+        color: ${colors.primary};
+    }
+
+    svg{
+        margin: 0 10px 0 0;
+    }
 
     @media ${device.lg}{
-        margin: 0 10px;
+        margin: 0 25px;
         font-size: 20px;
         color: ${colors.gray1};
     }
@@ -76,7 +86,7 @@ export const Hamburguer = styled.div`
     position: absolute;
     height: 3px;
     width: 100%;
-    background: ${colors.white};
+    background: ${colors.primary};
     border-radius: 3px;
     opacity: 1;
     left: 0;

@@ -12,7 +12,12 @@ export const Pannel = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    max-width: 50%;
+    display: none;
+
+    @media ${device.lg}{
+        max-width: 50%;
+        display: flex;
+    }
 `;
 
 export const Content = styled.article`

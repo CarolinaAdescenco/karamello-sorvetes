@@ -7,12 +7,9 @@ import {
   Li, Ul, Content, Pannel, Loader, ContainerAction,
 } from './styles';
 
-import { contact } from '../../utils/data/data.json';
+import d from '../../utils/data/data.json';
 
 const Tab = ({ data }) => {
-  const whatsapp = contact[0];
-  const ifood = contact[1];
-
   const [selected, setSelected] = React.useState(1);
   const [load, setLoad] = React.useState(false);
 
@@ -57,7 +54,7 @@ const Tab = ({ data }) => {
                     <Action
                       type="a"
                       target="_blank"
-                      href={whatsapp.path}
+                      href={d.contact[0].path}
                       variable="filled"
                       name="Entre em contato"
                     />
@@ -65,7 +62,7 @@ const Tab = ({ data }) => {
                     <Action
                       type="a"
                       target="_blank"
-                      href={ifood.path}
+                      href={d.contact[1].path}
                       variable="outline"
                       name="Comprar agora"
                     />

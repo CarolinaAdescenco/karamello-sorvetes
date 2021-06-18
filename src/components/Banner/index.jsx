@@ -7,9 +7,9 @@ import Image from '../../images/banner-acai-karamello-sorvetes.png';
 import Image2 from '../../images/karamello-sorvetes-banner.jpeg';
 import Action from '../Action';
 
-import { contact } from '../../utils/data/data.json';
+import data from '../../utils/data/data.json';
 
-const data = {
+const info = {
   title: 'Hmmm, vai um açaí?',
   imagem: Image,
   subtitle: 'Compre nossos produtos no atacado e revenda na sua casa',
@@ -22,47 +22,42 @@ const data = {
   ),
 };
 
-const Banner = () => {
-  const whatsapp = contact[0];
-  const ifood = contact[1];
+const Banner = () => (
+  <Section>
+    <Content bg={Image2}>
+      <Container>
+        <Info>
+          <Title>
+            {info.title}
+          </Title>
 
-  return (
-    <Section>
-      <Content bg={Image2}>
-        <Container>
-          <Info>
-            <Title>
-              {data.title}
-            </Title>
+          <Subtitle>{info.subtitle}</Subtitle>
 
-            <Subtitle>{data.subtitle}</Subtitle>
-
-            {
-                data.description
+          {
+                info.description
             }
 
-            <ContainerAction>
-              <Action
-                type="a"
-                target="_blank"
-                href={whatsapp.path}
-                variable="filled"
-                name="Entre em contato"
-              />
+          <ContainerAction>
+            <Action
+              type="a"
+              target="_blank"
+              href={data.contact[0].path}
+              variable="filled"
+              name="Entre em contato"
+            />
 
-              <Action
-                type="a"
-                target="_blank"
-                href={ifood.path}
-                variable="outline"
-                name="Comprar agora"
-              />
-            </ContainerAction>
-          </Info>
-        </Container>
-      </Content>
-    </Section>
-  );
-};
+            <Action
+              type="a"
+              target="_blank"
+              href={data.contact[1].path}
+              variable="outline"
+              name="Comprar agora"
+            />
+          </ContainerAction>
+        </Info>
+      </Container>
+    </Content>
+  </Section>
+);
 
 export default Banner;
