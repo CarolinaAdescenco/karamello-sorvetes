@@ -12,9 +12,9 @@ import ImageKaramello from '../images/logo-karamello-sorvetes.jpeg';
 const IndexPage = () => (
   <Layout>
     <Helmet>
-      <title>Karamello Sorvetes - Loja de fábrica açaí, sorvete e picolé | Vendas no atacado</title>
+      <title>Karamello Sorvetes - O melhor açaí, sorvete e picolé do Alto Tietê!</title>
       <link rel="canonical" href="https://karamellosorvetes.com.br" />
-      <meta name="description" content="Karamello Sorvetes, compre no atacado e varejo o melhor sorvete, picolé e açaí da região de Suzano e Alto Tietê, direto da fábrica! Compre açaí, sorvete e picolé no atacado para revenda." />
+      <meta name="description" content="Karamello Sorvetes, compre no atacado e varejo o melhor sorvete, picolé e açaí da região de Suzano e Alto Tietê, direto da fábrica! Compre açaí, sorvete e picolé no atacado para revenda. Loja de fábrica de açaí, massa e picolé." />
       <meta name="robots" content="index, follow" />
 
       <meta property="og:locale" content="pt-BR" />

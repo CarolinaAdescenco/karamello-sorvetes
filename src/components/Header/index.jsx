@@ -14,7 +14,11 @@ const Header = () => {
   return (
     <HeaderContainer>
       <Container>
-        <Logo src={LogoKaramello} />
+        <Logo
+          src={LogoKaramello}
+          alt="Karamello Sorvetes - Revenda açaí, sorvete de massa e picolé"
+          title="Karamello Sorvetes - Revenda açaí, sorvete de massa e picolé"
+        />
 
         <Nav show={menuOpen}>
 
@@ -22,10 +26,10 @@ const Header = () => {
             <SiWhatsapp />
             Entrar em contato
           </NavItem>
-          <NavItem show={menuOpen} target="_blank" href={data.contact[1].path}>
+          {/* <NavItem show={menuOpen} target="_blank" href={data.contact[1].path}>
             <SiIfood />
             Comprar agora
-          </NavItem>
+          </NavItem> */}
         </Nav>
 
         <Hamburguer className={`${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
