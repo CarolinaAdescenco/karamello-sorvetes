@@ -46,13 +46,13 @@ const Banner = () => (
               name="Entre em contato"
             />
 
-            <Action
+            {/* <Action
               type="a"
               target="_blank"
               href={data.contact[1].path}
               variable="outline"
               name="Comprar agora"
-            />
+            /> */}
           </ContainerAction>
         </Info>
       </Container>
